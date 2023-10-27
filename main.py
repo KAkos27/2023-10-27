@@ -1,3 +1,3 @@
 import feladatok
 
-feladatok.nyolcadik()
+feladatok.kilencedik()
