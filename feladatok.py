@@ -71,16 +71,22 @@ def nyolcadik():
     while not(a.islower() and (hossz == 4)):
         print("Rossz szöveget adtál meg")
         a: str = str(input("Adj meg egy tetszőleges szöveget: "))
+        hossz = len(a)
     print("Jó szöveget adtál meg")
 
 #Kérj a felhasználótól bizonyos számú egész számot (0-tól eltérő értékeket), és írasd ki az átlagukat 2 tizedes jegy pontossággal (a felhasználó úgy jelzi, hogy többet nem kíván beírni, hogy azt írja: 0)!
 def kilencedik():
     a: int = int(input("Kérek egy számot: "))
+    while a < 0:
+        a: int = int(input("Kérek egy POZITÍV számot: "))
     i: int = 0
     osszeg: int = 0
     osszeg += a
+    
     while a != 0: 
         a: int = int(input("Kérek egy számot: "))
+        while a < 0:
+            a: int = int(input("Kérek egy POZITÍV számot: "))
         i += 1
         osszeg += a
     szamolas = (osszeg / i)
