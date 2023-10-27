@@ -20,7 +20,7 @@ def masodik():
 #Addig kérjünk be számokat, amíg nem kapunk kétjegyű és páros számot!*
 def harmadik():
     a: int = int(input("Kérek egy számot: "))
-    while not (100 > a >= 10 and (a % 2 == 0)):
+    while not (((-100 < a <= -10) or (100 > a >= 10)) and (a % 2 == 0)):
         print("Kétjegyű páros számot kell megadni!")
         a: int = int(input("Kérek egy számot: "))
     print(f"A(z) {a} egy kétjegyű páros szám")
@@ -82,7 +82,7 @@ def kilencedik():
     i: int = 0
     osszeg: int = 0
     osszeg += a
-    
+
     while a != 0: 
         a: int = int(input("Kérek egy számot: "))
         while a < 0:
@@ -91,3 +91,4 @@ def kilencedik():
         osszeg += a
     szamolas = (osszeg / i)
     print(round(szamolas, 2))
+
