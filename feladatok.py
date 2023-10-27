@@ -67,5 +67,6 @@ def hetedik():
 #Addig kérjünk be szöveget, amíg csupa kis betűs és 4 karakteres szót nem adnak meg!*
 def nyolcadik():
     a: str = str(input("Adj meg egy tetszőleges szöveget: "))
-    while not(len(a) == 4 and a.islower):
+    while not(a.islower() and (a(len) == 4)):
         a: str = str(input("Adj meg egy tetszőleges szöveget: "))
+    print("Jó szöveget adtál meg")
